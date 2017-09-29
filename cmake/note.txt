@@ -1,20 +1,3 @@
-cmake不区分大小写，建议命令使用大写！
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8) 
-设置所写的CMakeLists.txt文件，至少需要的cmake版本
-PROJECT(HELLO) 
-为本次构建起一个名字，这不是最后exe的名字
-
-ADD_EXECUTABLE(hi main.cpp) 
-添加可执行文件，第一个参数是可执行文件的名字，第二个参数是源文件（暂时只考虑少量源文件，这样可以依次写在后面，后面有命令来批量加入源文件）
-
-cmake .. 
-该命令中..，意味着CMakeLists.txt在上一层目录，这样构建保证了所有构建的文件全部在build文件夹中，方便使用版本控制软件如git进行版本控制，只需要忽略build就可以了
-
-
-
-
-
-
 INCLUDE指令
 用来载入CMakeLists.txt文件，也用于载入预定义的cmake模块.
 INCLUDE(file1 [OPTIONAL])
