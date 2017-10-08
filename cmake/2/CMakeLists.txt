@@ -1,0 +1,12 @@
+project(test)
+
+# Required cmake version
+cmake_minimum_required(VERSION 3.5.1)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib)
+#SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+SET(EXECUTABLE_OUTPUT_PATH "${PROJECT_BINARY_DIR}/bin")
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src add_src)
+#ADD_LIBRARY(use_add ${add_src})
+ADD_EXECUTABLE(use_add ${add_src})
+TARGET_LINK_LIBRARIES(use_add libadd.a)
