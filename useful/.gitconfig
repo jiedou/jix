@@ -1,0 +1,22 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = jiedou
+	email = jixfly@163.com
+[alias]
+	st=status
+	pb=pull --rebase 
+	pl=pull
+	ct=commit
+	ph=push
+	rb=rebase
+	br=branch
+	ck=checkout
+	df=diff
+	
+[core]
+	ui=color
+	editor=notepad
