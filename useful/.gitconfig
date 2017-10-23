@@ -16,6 +16,7 @@
 	br=branch
 	ck=checkout
 	df=diff
+	sb=submodule update --init
 	
 [core]
 	ui=color
