@@ -17,5 +17,10 @@ int main()
     delete[] p;
     p=new int(2);
     cout<<"*p="<<*p<<endl;
+    delete[] p;
+    char ch[10]="abcdef";
+    char *p_char=new(ch) char;
+    cout<<"p_char="<<p_char<<endl;
+
     return 0;
 }
