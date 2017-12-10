@@ -21,4 +21,11 @@
 	
 [core]
 	ui=color
-	editor=notepad
+#	editor=notepad
+	editor=vim
+[color]
+	status=auto
+	diff=auto
+	branch=auto
+	interactive=auto
+	ui=true
